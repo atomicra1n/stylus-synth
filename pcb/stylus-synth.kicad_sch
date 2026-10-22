@@ -5191,7 +5191,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 91.44 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -5271,7 +5271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 68.58 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -5351,7 +5351,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm_Relief"
 			(at 19.05 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5507,7 +5507,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 144.78 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -5665,7 +5665,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 114.3 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -5745,7 +5745,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 196.85 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5928,7 +5928,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 205.74 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -6086,7 +6086,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 83.82 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -6245,7 +6245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 234.95 150.1648 0)
 			(hide yes)
 			(show_name no)
@@ -6325,7 +6325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 129.54 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -6405,7 +6405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 119.38 169.672 90)
 			(hide yes)
 			(show_name no)
@@ -6562,7 +6562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 361.95 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -6642,7 +6642,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 173.99 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -6735,7 +6735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 22.352 158.75 90)
 			(hide yes)
 			(show_name no)
@@ -6894,7 +6894,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 277.1648 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -6974,7 +6974,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 213.36 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -7132,7 +7132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 190.5 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -7292,7 +7292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 276.352 200.66 90)
 			(hide yes)
 			(show_name no)
@@ -7372,7 +7372,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 60.96 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -7451,7 +7451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 292.1 193.3448 0)
 			(hide yes)
 			(show_name no)
@@ -7531,7 +7531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 152.4 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -7611,7 +7611,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_NKK_GW12LJP"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 361.95 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -7768,7 +7768,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 238.76 152.908 90)
 			(hide yes)
 			(show_name no)
@@ -8004,7 +8004,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 106.68 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -8086,7 +8086,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 263.1948 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -8244,7 +8244,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 99.06 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -8324,7 +8324,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 121.92 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -8484,7 +8484,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-24_W7.62mm"
+		(property "Footprint" "stylus-synth:Pot_WH148_RightAngle"
 			(at 318.77 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -8600,7 +8600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "OptoDevice:R_LDR_5.1x4.3mm_P3.4mm_Vertical"
 			(at 193.04 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -8681,7 +8681,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 182.88 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -8839,7 +8839,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "stylus-synth:Jack_3.5mm_ST-214C"
 			(at 331.47 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -8928,7 +8928,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 175.26 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -9166,7 +9166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 191.4652 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -9246,7 +9246,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 198.12 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -9328,7 +9328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 284.1752 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -9486,7 +9486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 160.02 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -9566,7 +9566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 137.16 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -9726,7 +9726,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm_Relief"
 			(at 363.22 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -9806,7 +9806,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 246.38 152.908 90)
 			(hide yes)
 			(show_name no)
@@ -9888,7 +9888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 299.4152 220.98 0)
 			(hide yes)
 			(show_name no)
@@ -9971,7 +9971,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "stylus-synth:Pot_WH148_RightAngle"
 			(at 257.81 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10243,7 +10243,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 76.2 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -10323,7 +10323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 167.64 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -10405,7 +10405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 138.1252 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -10643,7 +10643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "stylus-synth:StylusPads_20x4.5mm"
 			(at 142.24 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10934,7 +10934,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 125.4252 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -11014,7 +11014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 166.37 194.818 90)
 			(hide yes)
 			(show_name no)
@@ -11172,7 +11172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 266.7 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -11428,7 +11428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 235.9152 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11508,7 +11508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:PQFP-160_28x28mm_P0.65mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 129.54 169.672 90)
 			(hide yes)
 			(show_name no)
@@ -11588,7 +11588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm"
+		(property "Footprint" "stylus-synth:RP2040-Zero"
 			(at 67.31 146.05 0)
 			(hide yes)
 			(show_name no)
