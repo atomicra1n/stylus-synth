@@ -70,7 +70,20 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|3120000|10000|bc1e5420-9f19-4834-acb2-9b19d1f7dca1|957b4f89-092c-4a12-92f2-a6c9882b594a",
+          ""
+        ],
+        [
+          "silk_edge_clearance|77520800|0|bc1e5420-9f19-4834-acb2-9b19d1f7dca1|b5ff97d7-19ad-45cf-8777-67e16026c46b",
+          ""
+        ],
+        [
+          "silk_over_copper|71770800|5750000|b5ff97d7-19ad-45cf-8777-67e16026c46b|440e576a-e104-4ed7-a8c4-a9c6c51b8b70",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -553,7 +566,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
