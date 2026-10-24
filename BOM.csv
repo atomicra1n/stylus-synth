@@ -1,0 +1,25 @@
+Item,Qty,Supplier,Cost/item,Total Cost,link
+CREATALL RP2040-Zero,1,GM Electronic,$5.50,$5.50,https://www.gme.cz/v/1518920/creatall-rp2040-zero-vyvojovy-modul-dual-core-cortex-m0-2-mb-flash
+LM386N-1 amplifier,1,GM Electronic,$1.40,$1.40,https://www.gme.cz/v/1487657/texas-instruments-lm386n-1-nopb-zesilovac
+DIL08PZ Socket,1,GM Electronic,$0.40,$0.40,https://www.gme.cz/v/1501853/kls-dil08pz-patice
+Speaker (PSR-29N08S),1,GM Electronic,$0.85,$0.85,https://www.gme.cz/v/1498665/hitpoint-psr-29n08s-yhq-reproduktor
+Potentiometer (PC1621NBK010),2,GM Electronic,$1.00,$2.00,https://www.gme.cz/v/1494558/pc1621nbk010-potenciometr
+KN32 knob,2,GM Electronic,$0.70,$1.40,https://www.gme.cz/v/1500373/kn32-knoflik-plastovy-prumer-266mm-osa-6mm-cerny
+ST-214C 3.5mm jack,1,GM Electronic,$0.55,$0.55,https://www.gme.cz/v/1501907/st-214c-jack-35-stereo
+TS6601 button,2,GM Electronic,$0.11,$0.22,https://www.gme.cz/v/1497943/kls-ts6601-43-180-mikrospinac
+S140C 1x40 pin header,1,GM Electronic,$0.40,$0.40,https://www.gme.cz/v/1514383/s140c-bila-kolikova-lista-1x40pin-roztec-254mm
+2 layer 100x100 mm PCB (5 pieces),1,JLCPCB,$4.00,$4.00,https://jlcpcb.com/
+Black heat-shrink tubing CHS21-6.4,1,GM Electronic,$0.55,$0.55,https://www.gme.cz/v/1519087/c-tie-chs21-64-smrstovaci-buzirka
+Resistor 1 kiloohm 1% 0207,23,GM Electronic,$0.09,$2.07,https://www.gme.cz/v/1486228/gym-cym-rm-1k-06w-1-0207-metalizovany-rezistor
+Resistor 1 Megaohm 1% 0207,10,GM Electronic,$0.09,$0.90,https://www.gme.cz/v/1486816/gym-cym-rm-1m-06w-1-0207-metalizovany-rezistor
+Resistor 100 kiloohm 1% 0207,10,GM Electronic,$0.09,$0.90,https://www.gme.cz/v/1494147/gym-cym-rm-100k-06w-1-0207-metalizovany-rezistor
+Resistor 10 ohm 1% 0207,10,GM Electronic,$0.09,$0.90,https://www.gme.cz/v/1494152/gym-cym-rm-10r-06w-1-0207-metalizovany-rezistor
+Resistor 330 ohm 1% 0207,10,GM Electronic,$0.09,$0.90,https://www.gme.cz/v/1494116/gym-cym-rm-330r-06w-1-0207-metalizovany-rezistor
+Capacitor 220 microFarad 25V,5,GM Electronic,$0.04,$0.20,https://www.gme.cz/v/1484171/jamicon-ce-220u-25vit-jam-tl-8x115-rm35-bulk-elektrolyticky-kondenzator
+Capacitor 10 microFarad 16V,6,GM Electronic,$0.13,$0.78,https://www.gme.cz/v/1486104/hitano-ce-10u-16vit-hit-exr-5x11-rm2-bulk-elektrolyticky-kondenzator
+Capacitor 100 nanofarad,3,GM Electronic,$0.25,$0.75,https://www.gme.cz/v/1489676/hitano-ck-100n-50v-x7r-rm508-10-keramicky-kondenzator
+Capacitor 10 nanofarad,5,GM Electronic,$0.16,$0.80,https://www.gme.cz/v/1489673/hitano-ck-10n-50v-x7r-rm508-10-keramicky-kondenzator
+Capacitor 47 nanofarad,6,GM Electronic,$0.13,$0.78,https://www.gme.cz/v/1486853/hitano-ck-47n-50v-x7r-rm508-10-keramicky-kondenzator
+Green LED 5mm L-53SGC,2,GM Electronic,$0.15,$0.30,https://www.gme.cz/v/1491527/kingbright-l-53sgc-led-5mm-zelena
+Photoresistor LDR5516,1,GM Electronic,$0.33,$0.33,https://www.gme.cz/v/1495847/ldr5516-fotorezistor
+Estimated total shipping,1,,,$0.00,
