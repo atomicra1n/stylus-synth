@@ -4,6 +4,7 @@ import digitalio
 import pwmio
 import synthio
 import audiopwmio
+import usb_midi
 import time
 import array
 
@@ -56,12 +57,22 @@ midi_notes = [60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
 def midi_to_freq(midi):
     return 440.0 * (2.0 ** ((midi - 69) / 12.0))
 
+# midi output
+midi_port = usb_midi.ports[1]
+
+def midi_on(note):
+    midi_port.write(bytes([0x90, note, 100]))
+
+def midi_off(note):
+    midi_port.write(bytes([0x80, note, 0]))
+
 # state
 current_pad = 0
 playing = False
 fading = False
 fade_start = 0
 current_note = None
+current_midi = 0
 octave = 0
 wave_idx = 0
 prev_oct = True
@@ -71,6 +82,7 @@ def read_pad():
     raw = stylus.value
     step = 65535 / 21
     pad = round(raw / step)
+    # uncomment to debug pad readings:
     # print("raw:", raw, "pad:", pad)
     if pad < 1 or pad > 20:
         return 0
@@ -107,6 +119,7 @@ while True:
 
     if pad > 0 and not playing:
         # new note
+        # if we were still fading from the last note, kill it first
         if fading and current_note is not None:
             synth.release(current_note)
             led.duty_cycle = 0
@@ -119,18 +132,26 @@ while True:
         led.duty_cycle = 65535
         playing = True
         current_pad = pad
+        current_midi = midi_num
+        midi_on(midi_num)
         # print("playing pad", pad, "freq", freq)
 
     elif pad > 0 and playing and pad != current_pad:
         # sliding between pads
+        old_midi = current_midi
         midi_num = midi_notes[pad - 1] + (octave * 12)
         current_note.frequency = midi_to_freq(midi_num)
         current_pad = pad
+        current_midi = midi_num
+        midi_off(old_midi)
+        midi_on(midi_num)
 
     elif pad == 0 and playing:
+        # lifted stylus, start fading
         playing = False
         fading = True
         fade_start = time.monotonic()
+        midi_off(current_midi)
 
     # fade the led down after lifting
     if fading:
