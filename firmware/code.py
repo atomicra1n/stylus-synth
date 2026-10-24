@@ -1,21 +1,32 @@
 import board
 import analogio
+import digitalio
 import pwmio
 import synthio
 import audiopwmio
 import time
 import array
 
-# basic pad reading and sound output test
-
+# pins
 stylus = analogio.AnalogIn(board.GP26)
+decay_knob = analogio.AnalogIn(board.GP27)
 led = pwmio.PWMOut(board.GP2, frequency=1000, duty_cycle=0)
 
+btn_oct = digitalio.DigitalInOut(board.GP4)
+btn_oct.direction = digitalio.Direction.INPUT
+btn_oct.pull = digitalio.Pull.UP
+
+btn_wav = digitalio.DigitalInOut(board.GP5)
+btn_wav.direction = digitalio.Direction.INPUT
+btn_wav.pull = digitalio.Pull.UP
+
+# audio
 audio = audiopwmio.PWMAudioOut(board.GP0)
 synth = synthio.Synthesizer(sample_rate=22050)
 audio.play(synth)
 
-# square wave
+# waveforms 256 samples each
+# range is -32768 to 32767
 square = array.array("h", [0] * 256)
 for i in range(256):
     if i < 128:
@@ -23,55 +34,117 @@ for i in range(256):
     else:
         square[i] = -32768
 
-# notes C4 to G5 in midi
+saw = array.array("h", [0] * 256)
+for i in range(256):
+    saw[i] = int(i * 65535 / 256 - 32768)
+
+# found online how to make a triangle wave
+triangle = array.array("h", [0] * 256)
+for i in range(256):
+    if i < 128:
+        triangle[i] = int(i * 65535 / 128 - 32768)
+    else:
+        triangle[i] = int((256 - i) * 65535 / 128 - 32768)
+
+waves = [square, saw, triangle]
+wave_names = ["square", "saw", "triangle"]
+
+# C4 to G5
 midi_notes = [60, 61, 62, 63, 64, 65, 66, 67, 68, 69,
               70, 71, 72, 73, 74, 75, 76, 77, 78, 79]
 
 def midi_to_freq(midi):
     return 440.0 * (2.0 ** ((midi - 69) / 12.0))
 
-current_note = None
+# state
 current_pad = 0
+playing = False
+fading = False
+fade_start = 0
+current_note = None
+octave = 0
+wave_idx = 0
+prev_oct = True
+prev_wav = True
 
 def read_pad():
     raw = stylus.value
     step = 65535 / 21
     pad = round(raw / step)
+    # print("raw:", raw, "pad:", pad)
     if pad < 1 or pad > 20:
         return 0
     return pad
 
-print("testing stylus...")
+def read_decay():
+    raw = decay_knob.value
+    return 0.05 + (raw / 65535) * 1.95
+
+print("starting...")
 
 while True:
     pad = read_pad()
-    raw = stylus.value
-    print("raw:", raw, "pad:", pad)
 
-    if pad > 0 and current_pad == 0:
-        # touched
-        midi_num = midi_notes[pad - 1]
+    # False means pressed for buttons
+    oct_now = btn_oct.value
+    wav_now = btn_wav.value
+
+    if oct_now == False and prev_oct == True:
+        octave = octave + 1
+        if octave > 1:
+            octave = -1
+        print("octave:", octave)
+    prev_oct = oct_now
+
+    if wav_now == False and prev_wav == True:
+        wave_idx = wave_idx + 1
+        if wave_idx > 2:
+            wave_idx = 0
+        print("wave:", wave_names[wave_idx])
+        if current_note is not None and playing:
+            current_note.waveform = waves[wave_idx]
+    prev_wav = wav_now
+
+    if pad > 0 and not playing:
+        # new note
+        if fading and current_note is not None:
+            synth.release(current_note)
+            led.duty_cycle = 0
+            fading = False
+
+        midi_num = midi_notes[pad - 1] + (octave * 12)
         freq = midi_to_freq(midi_num)
-        print("  -> playing", freq, "hz")
-        current_note = synthio.Note(frequency=freq, waveform=square)
+        current_note = synthio.Note(frequency=freq, waveform=waves[wave_idx])
         synth.press(current_note)
         led.duty_cycle = 65535
+        playing = True
+        current_pad = pad
+        # print("playing pad", pad, "freq", freq)
+
+    elif pad > 0 and playing and pad != current_pad:
+        # sliding between pads
+        midi_num = midi_notes[pad - 1] + (octave * 12)
+        current_note.frequency = midi_to_freq(midi_num)
         current_pad = pad
 
-    elif pad > 0 and pad != current_pad:
-        # moved to different pad
-        midi_num = midi_notes[pad - 1]
-        freq = midi_to_freq(midi_num)
-        print("  -> slide to", freq, "hz")
-        current_note.frequency = freq
-        current_pad = pad
+    elif pad == 0 and playing:
+        playing = False
+        fading = True
+        fade_start = time.monotonic()
 
-    elif pad == 0 and current_pad > 0:
-        # lifted
-        print("  -> off")
-        synth.release(current_note)
-        current_note = None
-        led.duty_cycle = 0
-        current_pad = 0
+    # fade the led down after lifting
+    if fading:
+        decay_time = read_decay()
+        elapsed = time.monotonic() - fade_start
+        if elapsed >= decay_time:
+            led.duty_cycle = 0
+            fading = False
+            if current_note is not None:
+                synth.release(current_note)
+                current_note = None
+            current_pad = 0
+        else:
+            bright = 1.0 - (elapsed / decay_time)
+            led.duty_cycle = int(bright * 65535)
 
-    time.sleep(0.01)
+    time.sleep(0.005)
